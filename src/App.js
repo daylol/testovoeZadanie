@@ -6,6 +6,8 @@ import { Routes,Route } from 'react-router-dom';
 
 import MainPage from './components/pages/MainPage';
 import SinglePage from './components/pages/SinglePage';
+import styles from './components/appWrapper.module.scss'
+
 
 
 
@@ -27,10 +29,12 @@ function App() {
 
 
   return (
+    <div className={styles.appWrapper}>
     <Routes>
       <Route path='/' element={<MainPage jobs={jobs} isLoading={isLoading}/>}/>
       <Route path='/:id' element={<SinglePage />} />
     </Routes>
+    </div>
   );
 }
 
