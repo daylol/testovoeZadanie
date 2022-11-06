@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/testovoeZadanie/static/css/main.df1d2074.css",
+    "main.js": "/testovoeZadanie/static/js/main.42297c64.js",
+    "index.html": "/testovoeZadanie/index.html",
+    "main.df1d2074.css.map": "/testovoeZadanie/static/css/main.df1d2074.css.map",
+    "main.42297c64.js.map": "/testovoeZadanie/static/js/main.42297c64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df1d2074.css",
+    "static/js/main.42297c64.js"
+  ]
+}
