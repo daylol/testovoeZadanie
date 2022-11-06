@@ -1,0 +1,163 @@
+.wrapper{
+    @apply my-4 w-11/12 m-0 mx-auto p-10 bg-gray-50 rounded-md xl:w-4/5 m-0 mx-auto lg:p-3;
+    .info{
+        @apply flex flex-row justify-between xl:flex-col;
+        .general{
+            @apply flex flex-col w-720 lg:w-11/12 m-0 mx-auto;
+            .top{
+                @apply flex flex-row justify-between mb-2 md:flex-col;
+                p{
+                    @apply font-bold text-xl leading-8 text-darkBlue mb-2;
+                }
+                .action{
+                    @apply flex flex-row justify-between w-64 md:w-11/12;
+                    p{
+                        @apply text-lg font-normal leading-6 ml-2;
+                    }
+                    .save{
+                        @apply flex flex-row items-center;
+                        &:hover{
+                            @apply cursor-pointer
+                        }
+                        
+                    }
+                    .share{
+                        @apply flex flex-row items-center;
+                        &:hover{
+                            @apply cursor-pointer
+                        }
+                    }
+                }
+            }
+            .line{
+                @apply h-px w-full bg-indigo-900;
+            }
+            button{
+                @apply my-8 py-4 px-7 flex items-start w-32 h-12 text-xs font-semibold bg-indigo-900 rounded-lg text-white lg:my-4 md:hidden;
+            }
+            .about{
+                @apply flex flex-col;
+                .title{
+                    @apply flex flex-row justify-between md:flex-col ;
+                    .info{
+                        @apply flex flex-col w-2/3 md:w-full;
+                        p{
+                            @apply text-2xl font-bold ;
+                        }
+                        span{
+                            @apply text-lg font-normal text-lightGrey my-2;
+                        }
+                    }
+                    .salary{
+                        p{
+                            @apply font-bold text-xl text-darkBlue;
+                        }
+                        span{
+                            @apply text-lg font-normal;
+                        }
+                    }
+                    
+                }
+                .desc{
+                    h2{
+                        @apply font-bold text-xl text-darkBlue my-4;
+                    }
+                    p{
+                        @apply font-normal text-lg text-darkBlue;
+                    }
+                }
+                .benefits{
+                    h2{
+                        @apply font-bold text-xl text-darkBlue my-4;
+                    }
+                    p{
+                        @apply font-normal text-lg text-darkBlue;
+                    }
+                    ul{
+                        li{
+                            @apply font-normal text-lg text-darkBlue list-disc;
+                        }
+                    }
+                }
+                .addInfo{
+                    h2{
+                        @apply font-bold text-3xl text-darkBlue my-6 md:my-3;
+                    }
+                    .employ{
+                        @apply mb-6;
+                        p{
+                            @apply font-normal text-lg text-darkBlue mb-2;
+                        }
+                        .types{
+                            @apply flex flex-row;
+                            .type{
+                                @apply border rounded-lg border-solid border-border py-4 bg-bgColor mr-2 w-56;
+                                p{
+                                    @apply flex justify-center items-center m-0 font-bold text-base;
+                                }
+                            }
+                        }
+                    }
+                    .benef{
+                        @apply mb-20 md:mb-4;
+                        p{
+                            @apply font-normal text-lg text-darkBlue mb-2;
+                        }
+                        .types{
+                            @apply flex flex-row lg:overflow-x-auto;
+                            .type{
+                                @apply border rounded-lg border-solid border-yBorder py-4 bg-bgYellow mr-2 w-56;
+                                p{
+                                    @apply flex justify-center items-center m-0 font-bold text-base text-yelow;
+                                }
+                            }
+                        }
+                    }
+                }
+                .content{
+                    @apply mb-10 ;
+                    h2{
+                        @apply font-bold text-3xl text-darkBlue my-8 md:mb-3;
+                    }
+                    .pic{
+                        @apply flex flex-row lg:overflow-x-auto w-auto;
+                        img{
+                            @apply w-48 h-28 rounded-lg mr-2 md:mb-3 w-32 h-auto;
+                        }
+                    }
+                }
+                .back{
+                    @apply flex flex-row items-center py-4 px-5 rounded-lg bg-btn w-56 h-12 text-xs font-semibold ;
+                    .icon{
+                        @apply mr-4 ;
+                    }
+                    &:hover> .icon{
+                        @apply -translate-x-1 transition-all duration-500;
+                    }
+                }
+                
+            }
+        }
+        .map{
+            @apply py-8 px-16 bg-darkBlue text-white rounded-lg w-480 h-56 relative box-border overflow-hidden xl:ml-4  md:mt-6 ml-0 w-80 m-0 mx-auto py-4 px-4 md:ml-auto sm:w-64 h-48;
+            .circle{
+                @apply absolute -top-5 -left-20 w-72 h-72 bg-mapColor rounded-full;
+            }
+            .location{
+                @apply flex flex-col z-50 ;
+                h3{
+                    @apply font-bold text-xl z-50 md:text-base;
+                }
+                .loc{
+                    @apply flex flex-row items-center my-2 z-50 md:text-base;
+                    span{
+                        @apply ml-2;
+                    }
+                }
+                span{
+                    @apply mb-1 text-lg z-50 md:text-base;
+                }
+            }
+        }
+    }
+}

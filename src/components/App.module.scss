@@ -1,0 +1,55 @@
+.app{
+    @apply m-0 mx-auto p-10 lg:w-1070 m-0 mx-auto md:w-480 p-0 m-0 mx-auto sm:w-3/4;
+    .posts{
+        @apply flex flex-col m-0 mx-auto ;
+        .post{
+            @apply w-4/5 flex flex-row justify-between p-4 bg-white rounded-lg shadow-3xl my-2 lg:w-11/12 m-0 mx-auto md:w-11/12 m-0 mx-auto sm:w-11/12 m-0 mx-auto p-2;
+            .left{
+                @apply flex flex-row w-1070 sm:items-center ;
+                img{
+                    @apply w-85 h-85 rounded-full mr-6 sm:mr-2 w-16 h-16;
+                }
+                .info{
+                    @apply flex flex-col max-w-3xl;
+                    .name{
+                        @apply font-bold text-xl leading-6 tracking-tightest text-darkBlue sm:text-sm leading-none;
+                        &:hover{
+                            @apply underline;
+                        }
+                    }
+                    .building{
+                        @apply text-lightGrey text-base font-normal	leading-6 my-2 sm:text-sm my-1;
+                    }
+                    .address{
+                        @apply flex flex-row items-center sm:text-xs mt-1;
+                        .loc{
+                            @apply mr-1;
+                        }
+                    .location{
+                        @apply flex flex-row text-lightGrey text-base font-normal leading-6 sm:leading-none;
+                    }
+                    }
+                    
+                }
+            }
+            .right{
+                @apply flex flex-row md:ml-1;
+                .inner{
+                    @apply flex flex-col justify-between; 
+                    .icon{
+                        @apply flex justify-end;
+                        &:hover{
+                            @apply cursor-pointer;
+                        }
+                    }
+                    .salary{
+                        @apply text-lightGrey text-base font-normal leading-6 md:hidden;
+                        span{
+                            @apply font-bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
