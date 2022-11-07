@@ -139,7 +139,7 @@
             }
         }
         .map{
-            @apply py-8 px-16 bg-darkBlue text-white rounded-lg w-480 h-56 relative box-border overflow-hidden xl:ml-4  md:mt-6 ml-0 w-80 m-0 mx-auto py-4 px-4 md:ml-auto sm:w-64 h-48;
+            @apply py-8 px-16 bg-darkBlue text-white rounded-lg w-480 h-56 relative box-border overflow-hidden xl:ml-4  md:mt-6 ml-0 w-80 m-0 mx-auto py-4 px-4 md:ml-auto mt-4 sm:w-64 h-48;
             .circle{
                 @apply absolute -top-5 -left-20 w-72 h-72 bg-mapColor rounded-full;
             }

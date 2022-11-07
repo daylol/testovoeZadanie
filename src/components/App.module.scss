@@ -3,14 +3,14 @@
     .posts{
         @apply flex flex-col m-0 mx-auto ;
         .post{
-            @apply w-4/5 flex flex-row justify-between p-4 bg-white rounded-lg shadow-3xl my-2 lg:w-11/12 m-0 mx-auto md:w-11/12 m-0 mx-auto sm:w-11/12 m-0 mx-auto p-2;
+            @apply w-11/12 flex flex-row justify-between p-4 bg-white rounded-lg shadow-3xl my-2 lg:w-5/6 m-0 mx-auto md:w-11/12 m-0 mx-auto sm:w-11/12 m-0 mx-auto p-2;
             .left{
                 @apply flex flex-row w-1070 sm:items-center ;
                 img{
                     @apply w-85 h-85 rounded-full mr-6 sm:mr-2 w-16 h-16;
                 }
                 .info{
-                    @apply flex flex-col max-w-3xl;
+                    @apply flex flex-col max-w-2xl;
                     .name{
                         @apply font-bold text-xl leading-6 tracking-tightest text-darkBlue sm:text-sm leading-none;
                         &:hover{
@@ -33,7 +33,7 @@
                 }
             }
             .right{
-                @apply flex flex-row md:ml-1;
+                @apply flex flex-row w-52 md:ml-1;
                 .inner{
                     @apply flex flex-col justify-between; 
                     .icon{
